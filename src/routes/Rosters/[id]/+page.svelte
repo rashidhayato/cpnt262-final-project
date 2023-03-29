@@ -1,6 +1,6 @@
 
 <script>
-  import { page } from '$app/stores'
+  import { page } from '$main/stores'
   import { players } from '../players.js';
   import Card from '../Card.svelte';
   let getPlayer;

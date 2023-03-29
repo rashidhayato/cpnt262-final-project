@@ -12,6 +12,7 @@
     <h3>{player.id}</h3>
     <h3>{player.postion}</h3>
     <p>{player.description}</p>
+    <p>{player.link}</p>
   </a>
 </article>
 
