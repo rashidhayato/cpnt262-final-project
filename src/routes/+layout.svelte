@@ -2,7 +2,7 @@
 <script>
   import "./main.css";
 </script>
-
+ 
 <header>
   <h1>Arsenal Rosters</h1>
   <img src="arsenal-logo.svg" width="300" height="300" alt='arsenal logo'/>
