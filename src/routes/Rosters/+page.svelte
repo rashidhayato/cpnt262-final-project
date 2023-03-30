@@ -1,7 +1,6 @@
 <script>
   import {players} from "$lib/player.js";
   import Card from "$lib/card.svelte";
-  
 </script>
 
 <main>

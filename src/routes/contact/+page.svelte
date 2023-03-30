@@ -21,6 +21,7 @@
     padding: 2rem;
     background-color: rgb(212, 213, 203);
     text-decoration: none; 
+    
   }
 
 

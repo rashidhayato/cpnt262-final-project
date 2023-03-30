@@ -1,10 +1,11 @@
 
 <script>
-  import { page } from '$main/stores'
-  import {players} from "$lib/players.js";
-  import Card from "$lib/card.svelte";
+    import { page } from '$app/stores';
+    import { players } from "$lib/player.js";
+    import Card from "$lib/card.svelte";
   let getPlayer;
- 
+
+
   for (let player of players) {
     if (player.id === $page.params.id) {
       getPlayer = player;
@@ -15,6 +16,7 @@
   
 </script>
 
+<h1>{$page.params.player}</h1>
 
 <main>
   <article class="card">
