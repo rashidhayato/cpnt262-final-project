@@ -31,7 +31,7 @@ const player4 = {
   title: 'PLAYER PROFILE',
   id: 'Gabriel Magalhaes',
   position: 'Defender',
-  images: 'Gebriel.jpeg',
+  images: 'Gabriel.jpeg',
   description: 'Gabriel slotted seamlessly into the Gunners defence during his first season in London, impressing with his combativeness and composure in the back line, and contributing some important goals too.',
   
   link: 'https://www.arsenal.com/men/players/gabrielmagalhaes'

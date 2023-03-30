@@ -1,3 +1,8 @@
+section {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
 
 header {
   font-size: 25px;
@@ -55,6 +60,8 @@ body{
   padding: 0;
   background-color: rgb(184, 49, 49);
 }
+
+
 
 
 

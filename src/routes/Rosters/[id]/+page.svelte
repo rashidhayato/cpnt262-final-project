@@ -1,8 +1,8 @@
 
 <script>
   import { page } from '$main/stores'
-  import { players } from '../players.js';
-  import Card from '../Card.svelte';
+  import {players} from "$lib/players.js";
+  import Card from "$lib/card.svelte";
   let getPlayer;
  
   for (let player of players) {
@@ -20,8 +20,8 @@
   <article class="card">
     <img
       src="/{getPlayer.images}"
-      width="400"
-      height="400"
+      width="300"
+      height="300"
       alt="player images"
     />
 

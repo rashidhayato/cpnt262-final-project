@@ -1,26 +1,34 @@
 <script>
   export let player;
+
+  console.log(player)
+
 </script>
 
 <article class="card">
-  <!-- <img src="/{player.images}" width="300" height="300" alt="player images" /> -->
-  <h3>{player.id}</h3>
-  <img src="arsenal-logo" alt='arsenal logo'/>
-
-  <a href={player.title} target="_blank">
-    <h3>{player.url}</h3>
+  <a href={player.link} target="_blank"> 
+    <h3>{player.title}</h3>
+    <img class="player" src="/{player.images}" width="300" height="300" alt="player images" />
+    <img class="teamLogo" src="/arsenal-logo.svg" alt='arsenal logo'/>
     <h3>{player.id}</h3>
-    <h3>{player.postion}</h3>
+    <h3>{player.position}</h3>
     <p>{player.description}</p>
     <p>{player.link}</p>
-  </a>
+   </a> 
 </article>
 
 
 
 <style>
+
+  .teamLogo{
+    width:100px;
+    margin:0 auto;
+  }
+
+
   article {
-    width: 80%;
+    width: 100%;
     margin: 0;
     border-radius: 1px rgb(8, 8, 8);
     justify-content: center;
@@ -29,7 +37,7 @@
   }
   article :hover {
     background-color: rgb(179, 10, 10);
-    color: white;
+    color: rgb(255, 255, 255);
   }
   article img {
     display: block;
@@ -46,11 +54,16 @@
   }
   .card {
     display: grid;
-    margin: 0;
+    margin: 0 auto;
     grid-gap: 2em;
   }
+
   @media (min-width: 80em) {
     .card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:420px;
       grid-template-columns: repeat(3, 1fr);
       margin: 0;
     }

@@ -1,13 +1,13 @@
 <script>
-  import {player} from "$lib/players.js";
+  import {players} from "$lib/player.js";
   import Card from "$lib/card.svelte";
+  
 </script>
 
 <main>
   <section>
-    {#each player as player}
-      <a href="Rosters/{player.id}">
-        
+    {#each players as player}
+      <a href="/Rosters{player.id}">
         <Card {player} />
       </a>
     {/each}
